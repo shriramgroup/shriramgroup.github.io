@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>sriram </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Shri Ram<br>groups</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Digital Photo and Video</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Agro and Food processing</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SuryaPrabha Power pvt ltd</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ShriRam infotech : Online services</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Shri Ram Groups</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Digital Photo and Video</b></h1>
+    <hr style="width:80px;border:5px solid red" class="w3-round">
+    <p> #wedding Photography        #Pre-wedding shoot         #Drone-shoot         #Event Photography </p>
+  </div>
+  
+  <!-- DIGITAL PHOTO Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/d1.jpg" style="width:100% ; height: ;" onclick="onClick(this)" alt="wed1">
+      <img src="images/d2.jpg" style="width:100%" onclick="onClick(this)" alt="wed2">
+      <img src="images/d3.jpg" style="width:100%" onclick="onClick(this)" alt="studio">
+    </div>
+
+    <div class="w3-half">
+     
+      <img src="images/d6.jpg" style="width:100%" onclick="onClick(this)" alt="wed4">
+      <img src="images/d5.jpg" style="width:100%" onclick="onClick(this)" alt="our team">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+  <!-- Agro and Food processing Services -->
+
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Agro and Food processing</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Soybeans are healthful and rich in protein, giving them numerous nutritional uses. People can eat them, drink them in
+    milk alternatives, and take them in the form of supplements. 
+    Soya milk and paneer are also options for those looking to replace dairy in the diet.
+    </p>
+    <p>#Soya paneer (tofu) # flavoured Milk </p>
+  </div>
+<div class="w3-row-padding ">
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+            <img src="images/af1.jpg" alt="John" style="width:100%">
+            <div class="w3-container">
+                <h3></h3>
+                <p class="w3-opacity"></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+            <img src="images/af2.jpg" alt="Jane" style="width:100%">
+            <div class="w3-container">
+                <h3></h3>
+                <p class="w3-opacity"></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+            <img src="images/af3.jpg" alt="Mike" style="width:100%">
+            <div class="w3-container">
+                <h3></h3>
+                <p class="w3-opacity"></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- SURYAPRABHA Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>SuryaPrabha Power pvt ltd.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    
+    <p>Solar energy is present everywhere in abundance, and is more than enough to illuminate the whole earth.We ensure successful, reliable and expedient installation and execution of solar solutions in all districts and towns.
+    </p>
+    <p>#Solar rooftap power plant </p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/sp1.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3></h3>
+          <p class="w3-opacity"></p>
+          <p></p>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <!-- NEWWWW online MULTIPURPOSE SOCIAL SOCIETY Packages / Pricing Tables -->
+ 
+<div class="w3-container" id="packages" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-red"><b>ShriRam infotech : Online services</b></h1>
+  <hr style="width:50px;border:5px solid red" class="w3-round">
+  
+  <p>Common Service Centres (CSC) scheme is one of the mission mode projects under the Digital India Programme. CSCs are the access points for delivery of essential public utility services, social welfare schemes, healthcare,
+  financial, education and agriculture services, apart from host of B2C services to citizens in rural and remote areas.
+  </p>
+  <p>#Online Form #PAN Card #Railway resveration #Govt. Scheme form #Job form </p>
+</div>
+<div class="w3-row-padding ">
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="images/ms1.jpg" alt="John" style="width:100%">
+      <div class="w3-container">
+        <h3></h3>
+        <p class="w3-opacity"></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="images/ms3.jpg" alt="Jane" style="width:100%">
+      <div class="w3-container">
+        <h3></h3>
+        <p class="w3-opacity"></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- MULTIPURPOSE SOCIAL SOCIETY Packages / Pricing Tables -->
+  
+
+
+  <!--  Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p> We love meeting new people and providing services</p>
+    <ul>
+      <li><i class="fa fa-phone"></i><span>+91 9850095007</span></li>
+      <li><i class="fa fa-envelope"></i><span>shriramgroups@gmail.com</span></li>
+      <li><i class="fa fa-map-marker"></i><span>Biroba ban road , Arewadi tal: Kavathemahankal Dist: Sangli
+          Maharashtra</span></li>
+    </ul>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
